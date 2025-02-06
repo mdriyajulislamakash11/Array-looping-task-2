@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+<body>
+      <p id="peragraph">the result</p>
+      <input id="input-feild" type="text">
+      <button id="update">Update</button>
+
+      <script>
+            document.getElementById("update").addEventListener("click", function(){
+                  const ubdate = document.getElementById("input-feild");
+                  const inputUpdate = ubdate.value;
+                  
+
+                  const pera = document.getElementById("peragraph");
+                  pera.innerText = inputUpdate;
+                  ubdate.value = ""
+            })
+      </script>
+</body>
+</html>
